@@ -1,0 +1,474 @@
+import numpy as np
+import pandas as pd
+years=1993
+year_list=[]
+data=[]
+csv=[]
+columns=pd.DataFrame()
+for i in range(0,25):
+    data.append(f"./{years} Dataset.csv")
+    year_list.append(years)
+    years=years+1
+csv1=pd.read_csv((data[0]))
+csv2=pd.read_csv((data[1]))
+csv3=pd.read_csv((data[2]))
+csv4=pd.read_csv((data[3]))
+csv5=pd.read_csv((data[4]))
+csv6=pd.read_csv((data[5]))
+csv7=pd.read_csv((data[6]))
+csv8=pd.read_csv((data[7]))
+csv9=pd.read_csv((data[8]))
+csv10=pd.read_csv((data[9]))
+csv11=pd.read_csv((data[10]))
+csv12=pd.read_csv((data[11]))
+csv13=pd.read_csv((data[12]))
+csv14=pd.read_csv((data[13]))
+csv15=pd.read_csv((data[14]))
+csv16=pd.read_csv((data[15]))
+csv17=pd.read_csv((data[16]))
+csv18=pd.read_csv((data[17]))
+csv19=pd.read_csv((data[18]))
+csv20=pd.read_csv((data[19]))
+csv21=pd.read_csv((data[20]))
+csv22=pd.read_csv((data[21]))
+csv23=pd.read_csv((data[22]))
+csv24=pd.read_csv((data[23]))
+csv25=pd.read_csv((data[24]))
+data_1993=pd.DataFrame(csv1)
+data_1994=pd.DataFrame(csv2)
+data_1995=pd.DataFrame(csv3)
+data_1996=pd.DataFrame(csv4)
+data_1997=pd.DataFrame(csv5)
+data_1998=pd.DataFrame(csv6)
+data_1999=pd.DataFrame(csv7)
+data_2000=pd.DataFrame(csv8)
+data_2001=pd.DataFrame(csv9)
+data_2002=pd.DataFrame(csv10)
+data_2003=pd.DataFrame(csv11)
+data_2004=pd.DataFrame(csv12)
+data_2005=pd.DataFrame(csv13)
+data_2006=pd.DataFrame(csv14)
+data_2007=pd.DataFrame(csv15)
+data_2008=pd.DataFrame(csv16)
+data_2009=pd.DataFrame(csv17)
+data_2010=pd.DataFrame(csv18)
+data_2011=pd.DataFrame(csv19)
+data_2012=pd.DataFrame(csv20)
+data_2013=pd.DataFrame(csv21)
+data_2014=pd.DataFrame(csv22)
+data_2015=pd.DataFrame(csv23)
+data_2016=pd.DataFrame(csv24)
+data_2017=pd.DataFrame(csv25)
+bins = [24, 35, 45, 55, 65, np.inf]
+names = [1, 2, 3, 4, 5]
+data_1993['age'] = pd.cut(data_1993['age'], bins, labels=names)
+_1993=pd.DataFrame({
+    "state":data_1993._state,
+    "year":data_1993.iyear,
+    "mental_health":data_1993.menthlth,
+    "sex":data_1993.sex,
+    "education":data_1993.educa,
+    "employment":data_1993.employ,
+    "marital_status":data_1993.marital,
+    "gen_health":data_1993.genhlth,
+    "diabetes":data_1993.diabetes,
+    "age":data_1993.age
+})
+data_1994['age'] = pd.cut(data_1994['age'], bins, labels=names)
+_1994=pd.DataFrame({
+    "state":data_1994._state,
+    "year":data_1994.iyear,
+    "mental_health":data_1994.menthlth,
+    "sex":data_1994.sex,
+    "education":data_1994.educa,
+    "employment":data_1994.employ,
+    "marital_status":data_1994.marital,
+    "gen_health":data_1994.genhlth,
+    "diabetes":data_1994.diabetes,
+    "age":data_1994.age
+})
+data_1995['age'] = pd.cut(data_1995['age'], bins, labels=names)
+_1995=pd.DataFrame({
+    "state":data_1995._state,
+    "year":data_1995.iyear,
+    "mental_health":data_1995.menthlth,
+    "sex":data_1995.sex,
+    "education":data_1995.educa,
+    "employment":data_1995.employ,
+    "marital_status":data_1995.marital,
+    "gen_health":data_1995.genhlth,
+    "diabetes":data_1995.diabetes,
+    "age":data_1995.age
+})
+data_1996['age'] = pd.cut(data_1996['age'], bins, labels=names)
+_1996=pd.DataFrame({
+    "state":data_1996._state,
+    "year":data_1996.iyear,
+    "mental_health":data_1996.menthlth,
+    "sex":data_1996.sex,
+    "education":data_1996.educa,
+    "employment":data_1996.employ,
+    "marital_status":data_1996.marital,
+    "gen_health":data_1996.genhlth,
+    "diabetes":data_1996.diabetes,
+    "age":data_1996.age
+})
+data_1997['age'] = pd.cut(data_1997['age'], bins, labels=names)
+_1997=pd.DataFrame({
+    "state":data_1997._state,
+    "year":data_1997.iyear,
+    "mental_health":data_1997.menthlth,
+    "sex":data_1997.sex,
+    "education":data_1997.educa,
+    "employment":data_1997.employ,
+    "marital_status":data_1997.marital,
+    "gen_health":data_1997.genhlth,
+    "diabetes":data_1997.diabetes,
+    "age":data_1997.age
+})
+data_1998['age'] = pd.cut(data_1998['age'], bins, labels=names)
+_1998=pd.DataFrame({
+    "state":data_1998._state,
+    "year":data_1998.iyear,
+    "mental_health":data_1998.menthlth,
+    "sex":data_1998.sex,
+    "education":data_1998.educa,
+    "employment":data_1998.employ,
+    "marital_status":data_1998.marital,
+    "gen_health":data_1998.genhlth,
+    "diabetes":data_1998.diabetes,
+    "age":data_1998.age
+})
+data_1999['age'] = pd.cut(data_1999['age'], bins, labels=names)
+_1999=pd.DataFrame({
+    "state":data_1999._state,
+    "year":data_1999.iyear,
+    "mental_health":data_1999.menthlth,
+    "sex":data_1999.sex,
+    "education":data_1999.educa,
+    "employment":data_1999.employ,
+    "marital_status":data_1999.marital,
+    "gen_health":data_1999.genhlth,
+    "diabetes":data_1999.diabetes,
+    "age":data_1999.age
+})
+data_2000['age'] = pd.cut(data_2000['age'], bins, labels=names)
+_2000=pd.DataFrame({
+    "state":data_2000._state,
+    "year":data_2000.iyear,
+    "mental_health":data_2000.menthlth,
+    "sex":data_2000.sex,
+    "education":data_2000.educa,
+    "employment":data_2000.employ,
+    "marital_status":data_2000.marital,
+    "gen_health":data_2000.genhlth,
+    "diabetes":data_2000.diabetes,
+    "age":data_2000.age
+})
+data_2001['age'] = pd.cut(data_2001['age'], bins, labels=names)
+_2001=pd.DataFrame({
+    "state":data_2001._state,
+    "year":data_2001.iyear,
+    "mental_health":data_2001.menthlth,
+    "sex":data_2001.sex,
+    "education":data_2001.educa,
+    "employment":data_2001.employ,
+    "marital_status":data_2001.marital,
+    "gen_health":data_2001.genhlth,
+    "diabetes":data_2001.diabetes,
+    "age":data_2001.age
+})
+data_2002['age'] = pd.cut(data_2002['age'], bins, labels=names)
+_2002=pd.DataFrame({
+    "state":data_2002._state,
+    "year":data_2002.iyear,
+    "mental_health":data_2002.menthlth,
+    "sex":data_2002.sex,
+    "education":data_2002.educa,
+    "employment":data_2002.employ,
+    "marital_status":data_2002.marital,
+    "gen_health":data_2002.genhlth,
+    "diabetes":data_2002.diabetes,
+    "age":data_2002.age
+})
+data_2003['age'] = pd.cut(data_2003['age'], bins, labels=names)
+_2003=pd.DataFrame({
+    "state":data_2003._state,
+    "year":data_2003.iyear,
+    "mental_health":data_2003.menthlth,
+    "sex":data_2003.sex,
+    "education":data_2003.educa,
+    "employment":data_2003.employ,
+    "marital_status":data_2003.marital,
+    "gen_health":data_2003.genhlth,
+    "diabetes":data_2003.diabetes,
+    "age":data_2003.age
+})
+data_2004['age'] = pd.cut(data_2004['age'], bins, labels=names)
+_2004=pd.DataFrame({
+    "state":data_2004._state,
+    "year":data_2004.iyear,
+    "mental_health":data_2004.menthlth,
+    "sex":data_2004.sex,
+    "education":data_2004.educa,
+    "employment":data_2004.employ,
+    "marital_status":data_2004.marital,
+    "gen_health":data_2004.genhlth,
+    "diabetes":data_2004.diabete2,
+    "age":data_2004.age
+})
+data_2005['age'] = pd.cut(data_2005['age'], bins, labels=names)
+_2005=pd.DataFrame({
+    "state":data_2005._state,
+    "year":data_2005.iyear,
+    "mental_health":data_2005.menthlth,
+    "sex":data_2005.sex,
+    "education":data_2005.educa,
+    "employment":data_2005.employ,
+    "marital_status":data_2005.marital,
+    "gen_health":data_2005.genhlth,
+    "diabetes":data_2005.diabete2,
+    "age":data_2005.age
+})
+data_2006['age'] = pd.cut(data_2006['age'], bins, labels=names)
+_2006=pd.DataFrame({
+    "state":data_2006._state,
+    "year":data_2006.iyear,
+    "mental_health":data_2006.menthlth,
+    "sex":data_2006.sex,
+    "education":data_2006.educa,
+    "employment":data_2006.employ,
+    "marital_status":data_2006.marital,
+    "gen_health":data_2006.genhlth,
+    "diabetes":data_2006.diabete2,
+    "age":data_2006.age
+})
+data_2007['age'] = pd.cut(data_2007['age'], bins, labels=names)
+_2007=pd.DataFrame({
+    "state":data_2007._state,
+    "year":data_2007.iyear,
+    "mental_health":data_2007.menthlth,
+    "sex":data_2007.sex,
+    "education":data_2007.educa,
+    "employment":data_2007.employ,
+    "marital_status":data_2007.marital,
+    "gen_health":data_2007.genhlth,
+    "diabetes":data_2007.diabete2,
+    "age":data_2007.age
+})
+data_2008['age'] = pd.cut(data_2008['age'], bins, labels=names)
+_2008=pd.DataFrame({
+    "state":data_2008._state,
+    "year":data_2008.iyear,
+    "mental_health":data_2008.menthlth,
+    "sex":data_2008.sex,
+    "education":data_2008.educa,
+    "employment":data_2008.employ,
+    "marital_status":data_2008.marital,
+    "gen_health":data_2008.genhlth,
+    "diabetes":data_2008.diabete2,
+    "age":data_2008.age
+})
+data_2009['age'] = pd.cut(data_2009['age'], bins, labels=names)
+_2009=pd.DataFrame({
+    "state":data_2009._state,
+    "year":data_2009.iyear,
+    "mental_health":data_2009.menthlth,
+    "sex":data_2009.sex,
+    "education":data_2009.educa,
+    "employment":data_2009.employ,
+    "marital_status":data_2009.marital,
+    "gen_health":data_2009.genhlth,
+    "diabetes":data_2009.diabete2,
+    "age":data_2009.age
+})
+data_2010['age'] = pd.cut(data_2010['age'], bins, labels=names)
+_2010=pd.DataFrame({
+    "state":data_2010._state,
+    "year":data_2010.iyear,
+    "mental_health":data_2010.menthlth,
+    "sex":data_2010.sex,
+    "education":data_2010.educa,
+    "employment":data_2010.employ,
+    "marital_status":data_2010.marital,
+    "gen_health":data_2010.genhlth,
+    "diabetes":data_2010.diabete2,
+    "age":data_2010.age
+})
+data_2011['age'] = pd.cut(data_2011['age'], bins, labels=names)
+_2011=pd.DataFrame({
+    "state":data_2011._state,
+    "year":data_2011.iyear,
+    "mental_health":data_2011.menthlth,
+    "sex":data_2011.sex,
+    "education":data_2011.educa,
+    "employment":data_2011.employ,
+    "marital_status":data_2011.marital,
+    "gen_health":data_2011.genhlth,
+    "diabetes":data_2011.diabete3,
+    "age":data_2011.age
+})
+data_2012['age'] = pd.cut(data_2012['age'], bins, labels=names)
+_2012=pd.DataFrame({
+    "state":data_2012._state,
+    "year":data_2012.iyear,
+    "mental_health":data_2012.menthlth,
+    "sex":data_2012.sex,
+    "education":data_2012.educa,
+    "employment":data_2012.employ,
+    "marital_status":data_2012.marital,
+    "gen_health":data_2012.genhlth,
+    "diabetes":data_2012.diabete3,
+    "age":data_2012.age
+})
+_2013=pd.DataFrame({
+    "state":data_2013._state,
+    "year":data_2013.iyear,
+    "mental_health":data_2013.menthlth,
+    "sex":data_2013.sex,
+    "education":data_2013.educa,
+    "employment":data_2013.employ1,
+    "marital_status":data_2013.marital,
+    "gen_health":data_2013.genhlth,
+    "diabetes":data_2013.diabete3,
+    "age":data_2013._age_g
+})
+_2014=pd.DataFrame({
+    "state":data_2014._state,
+    "year":data_2014.iyear,
+    "mental_health":data_2014.menthlth,
+    "sex":data_2014.sex,
+    "education":data_2014.educa,
+    "employment":data_2014.employ1,
+    "marital_status":data_2014.marital,
+    "gen_health":data_2014.genhlth,
+    "diabetes":data_2014.diabete3,
+    "age":data_2014._age_g
+})
+_2015=pd.DataFrame({
+    "state":data_2015._state,
+    "year":data_2015.iyear,
+    "mental_health":data_2015.menthlth,
+    "sex":data_2015.sex,
+    "education":data_2015.educa,
+    "employment":data_2015.employ1,
+    "marital_status":data_2015.marital,
+    "gen_health":data_2015.genhlth,
+    "diabetes":data_2015.diabete3,
+    "age":data_2015._age_g
+})
+_2016=pd.DataFrame({
+    "state":data_2016._state,
+    "year":data_2016.iyear,
+    "mental_health":data_2016.menthlth,
+    "sex":data_2016.sex,
+    "education":data_2016.educa,
+    "employment":data_2016.employ1,
+    "marital_status":data_2016.marital,
+    "gen_health":data_2016.genhlth,
+    "diabetes":data_2016.diabete3,
+    "age":data_2016._age_g
+})
+_2017=pd.DataFrame({
+    "state":data_2017._state,
+    "year":data_2017.iyear,
+    "mental_health":data_2017.menthlth,
+    "sex":data_2017.sex,
+    "education":data_2017.educa,
+    "employment":data_2017.employ1,
+    "marital_status":data_2017.marital,
+    "gen_health":data_2017.genhlth,
+    "diabetes":data_2017.diabete3,
+    "age":data_2017._age_g
+})
+full_data=pd.concat([_1993,
+                     _1994,
+                     _1995,
+                     _1996,
+                     _1997,
+                     _1998,
+                     _1999,
+                     _2000,
+                     _2001,
+                     _2002,
+                     _2003,
+                     _2004,
+                     _2005,
+                     _2006,
+                     _2007,
+                     _2008,
+                     _2009,
+                     _2010,
+                     _2011,
+                     _2012,
+                     _2013,
+                     _2014,
+                     _2015,
+                     _2016,
+                     _2017], ignore_index=True)
+full_data=full_data.replace(to_replace=[77,99],value="")
+full_data=full_data.replace(to_replace=[88],value=0)
+age_=pd.get_dummies(full_data["age"])
+eddummies=pd.get_dummies(full_data["education"])
+emp_stat=pd.get_dummies(full_data["employment"])
+marital_=pd.get_dummies(full_data["marital_status"])
+sex_=pd.get_dummies(full_data["sex"])
+gen_health_=pd.get_dummies(full_data["gen_health"])
+diabetes_=pd.get_dummies(full_data["diabetes"])
+_age=pd.DataFrame({
+      "18-24":age_[1.0],
+      "25-34":age_[2.0],
+      "35-44":age_[3.0],
+      "45-54":age_[4.0],
+      "55-64":age_[5.0],
+      "65+":age_[6.0]
+      })
+_eddummies=pd.DataFrame({
+        'no_grad_high':eddummies[1.0],
+        'grad_high':eddummies[2.0],
+        'attend_college':eddummies[3.0],
+        'grad_college':eddummies[4.0],
+        'ed_5_defintion_unknown':eddummies[5.0],
+        'ed_6_definition_unknown':eddummies[6.0],
+        'ed_refused':eddummies[9.0]
+        })
+_emp_stat=pd.DataFrame({
+        'employed':emp_stat[1.0]+emp_stat[2.0],
+        'unemployed':emp_stat[3.0]+emp_stat[4.0]+emp_stat[5.0]+emp_stat[6.0]+emp_stat[7.0]+emp_stat[8.0],
+        'employment_refused':emp_stat[9.0]
+        })
+_marital_status=pd.DataFrame({
+        'married':marital_[1.0],
+        'not_married':marital_[2.0]+marital_[3.0]+marital_[4.0]+marital_[5.0]+marital_[6.0],
+        'marital_status_refused':marital_[9.0]
+        })
+_sex=pd.DataFrame({
+        'male':sex_[1],
+        'female':sex_[2],
+        'sex_refused':sex_[9]
+        })
+_gen_health=pd.DataFrame({
+        'gen_health_excelent':gen_health_[1.0],
+        'gen_health_very_good':gen_health_[2.0],
+        'gen_health_good':gen_health_[3.0],
+        'gen_health_fair':gen_health_[4.0],
+        'gen_health_poor':gen_health_[5.0],
+        'gen_health_unsure':gen_health_[7.0],
+        'gen_health_refused':gen_health_[9.0]
+        })
+_diabetes=pd.DataFrame({
+        'has_diabetes':diabetes_[1.0],
+        'does_not_have_diabetes':diabetes_[2.0]+diabetes_[3.0]+diabetes_[4.0],
+        'diabetes_unknown':diabetes_[7.0],
+        'diabetes_refused':diabetes_[9.0]
+        })
+complete_data=pd.concat(
+        [full_data,
+        _age,
+        _eddummies,
+        _emp_stat,
+        _marital_status,
+        _sex,
+        _gen_health,
+        _diabetes], ignore_index=True, sort=False)
+pd.complete_data.to_csv("./complete_data.csv",mode='w',compression='zip')
